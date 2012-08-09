@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>StarDict</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.nokia.carbide.cdt.builder.carbideCPPBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.cdt.core.cnature</nature>
+		<nature>org.eclipse.cdt.core.ccnature</nature>
+		<nature>com.nokia.carbide.cdt.builder.carbideCPPBuilderNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>sis/PU_StarDict.pkg</name>
+			<type>1</type>
+			<location>D:/dev/Symbian/S60/devices/S60_5th_Edition_SDK_v1.0/epoc32/BUILD/dev/Symbian/workspace-test/StarDict/group/PU_StarDict.pkg</location>
+		</link>
+		<link>
+			<name>sis/PU_StarDict.sis</name>
+			<type>1</type>
+			<location>D:/dev/Symbian/S60/devices/S60_5th_Edition_SDK_v1.0/epoc32/BUILD/dev/Symbian/workspace-test/StarDict/group/PU_StarDict.sis</location>
+		</link>
+		<link>
+			<name>sis/PU_StarDict.sisx</name>
+			<type>1</type>
+			<location>D:/dev/Symbian/S60/devices/S60_5th_Edition_SDK_v1.0/epoc32/BUILD/dev/Symbian/workspace-test/StarDict/group/PU_StarDict.sisx</location>
+		</link>
+	</linkedResources>
+</projectDescription>

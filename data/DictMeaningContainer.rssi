@@ -1,0 +1,52 @@
+/*
+========================================================================
+ Name        : DictMeaningContainer.rssi
+ Author      : Yang WeiXiong
+ Copyright   : Star Dictionary
+Modify from S60Dict
+GPL Software based on Stardict
+ Description : 
+========================================================================
+*/
+#include "DictMeaningContainer.loc"
+
+RESOURCE AVKON_VIEW r_dict_meaning_container_dict_meaning_container_view
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+	menubar = r_dict_meaning_container_options_menu;
+	toolbar = 0;
+	}
+RESOURCE MENU_BAR r_dict_meaning_container_options_menu
+	{
+	}
+RESOURCE STATUS_PANE_APP_MODEL r_dict_meaning_container_i_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_dict_meaning_container_i_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_dict_meaning_container_i_title_resource
+	{
+	txt = STR_DictMeaningContainerView_4;
+	}
+RESOURCE RTXTED r_dict_meaning_container_i_dict_meaning_text
+	{
+	numlines = 0;
+	default_case = EAknEditorTextCase;
+	allowed_case_modes = EAknEditorAllCaseModes;
+	numeric_keymap = EAknEditorStandardNumberModeKeymap;
+	default_input_mode = EAknEditorTextInputMode;
+	allowed_input_modes = EAknEditorTextInputMode | EAknEditorNumericInputMode | EAknEditorSecretAlphaInputMode | EAknEditorKatakanaInputMode | EAknEditorFullWidthTextInputMode | EAknEditorFullWidthNumericInputMode | EAknEditorFullWidthKatakanaInputMode | EAknEditorHiraganaKanjiInputMode | EAknEditorHalfWidthTextInputMode;
+	flags = EEikEdwinNoHorizScrolling | EEikEdwinReadOnly;
+	avkon_flags = EAknEditorFlagEnableScrollBars;
+	}
+RESOURCE TBUF r_dict_meaning_container_i_dict_meaning_text_2
+	{
+	buf = STR_DictMeaningContainerView_9;
+	}

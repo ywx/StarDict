@@ -1,0 +1,16 @@
+/*
+========================================================================
+ Name        : DictMeaningContainer.l01
+ Author      : Yang WeiXiong
+ Copyright   : Star Dictionary
+Modify from S60Dict
+GPL Software based on Stardict
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+#define STR_DictMeaningContainerView_1 ""
+#define STR_DictMeaningContainerView_2 ""
+#define STR_DictMeaningContainerView_3 ""
+#define STR_DictMeaningContainerView_4 "Star Dict Meaning"
+#define STR_DictMeaningContainerView_9 ""

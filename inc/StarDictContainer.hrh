@@ -1,0 +1,17 @@
+/*
+========================================================================
+ Name        : StarDictContainer.hrh
+ Author      : YWX
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+enum TStarDictContainerViewCommands
+	{
+	EStarDictContainerViewIControlPaneRightId = 0x6000,
+	EStarDictContainerViewIChangeDictionaryMenuItemCommand,
+	EStarDictContainerViewIGoMenuItemCommand,
+	EStarDictContainerViewISettingMenuItemCommand,
+	EStarDictContainerViewIAboutMenuItemCommand,
+	EStarDictContainerViewIExitMenuItemCommand
+	};

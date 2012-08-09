@@ -1,0 +1,36 @@
+/*
+========================================================================
+ Name        : myComRes.l31
+ Author      : 
+ Copyright   : Your copyright notice
+ Description : 
+========================================================================
+*/
+// localized strings for language: Peoples Republic of Chinas Chinese (31)
+CHARACTER_SET UTF8
+
+//  LOCALISATION STRINGS
+#define qtn_about_dialog_title "About"
+#define qtn_about_dialog_text "my UI APP 002\nVersion 1.0\nAuthor:Yang WeiXiong\n2009-12-01\nA S60V5 Application to test UI Designed."
+
+//
+#define qtn_query_yseno_input_save_file_text "Yor are confirm to save the context to file.\nTest Only\n测试向txt文件追加数据。End"
+#define qtn_query_yseno_unicode_gbk_text	 "Are You Sure to Converter Unicode2Gbk then to save data ?"
+
+//#define qtn_message_test_save_data_text	 "E:\\SMSBody.txt\nAuthor:Yang WeiXiong\n2009-12-01\nTo test save(append) data to a txt file.\n"
+#define qtn_query_yseno_new_file_text	 "Are You Sure to Create a New File then to save data ?"
+#define qtn_query_yseno_append_file_text "Are You Sure to Open a Exit File then to Append data ?"
+
+#define qtn_query_yseno_display_subdir_text "Are You Sure to Display SubDir ?"
+
+#define qtn_dictionaries_list_heading	"Select Dictionaries"
+
+#define qtn_word_not_found				"Word not found, displaying adjacent words"
+#define qtn_no_dictionaries_found		"No dictionaries found"
+#define qtn_not_enough_memory			"Not enough memory!"
+#define qtn_cant_read_from_file			"Can't read from file!"
+#define qtn_length_is_zero				"Length is zero!"
+#define qtn_internal_error				"Internal Error!"
+#define qtn_corrupt						"Corrupt"
+
+// End of File

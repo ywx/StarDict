@@ -1,0 +1,23 @@
+/*
+========================================================================
+ Name        : StarDictContainer.l01
+ Author      : Yang WeiXiong
+ Copyright   : Star Dictionary
+Modify from S60Dict
+GPL Software based on Stardict
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+#define STR_StarDictContainerView_1 "Options"
+#define STR_StarDictContainerView_2 "Go"
+#define STR_StarDictContainerView_3 "Exit"
+#define STR_StarDictContainerView_4 "Star Dictionary"
+#define STR_StarDictContainerView_12 "Change Dictionary"
+#define STR_StarDictContainerView_13 "Go"
+#define STR_StarDictContainerView_14 "Setting"
+#define STR_StarDictContainerView_15 "About"
+#define STR_StarDictContainerView_16 "Exit"
+#define STR_StarDictContainerView_5 "Change Dictionary"
+#define STR_StarDictContainerView_11 ""
+#define STR_StarDictContainerView_6 "Button Hover Text"

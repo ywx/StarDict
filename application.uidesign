@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknApplication" version="1.1.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.NonLayoutBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknDocument" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknViewAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUi" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknAppUiBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneCaption" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.AvkonViewReference" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignReference" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.version">5.0.0</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_CONTAINER">StarDictAppUi</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.ROOT_APPLICATION_NAME">StarDict</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknApplication">
+    <property id="className">CStarDictApplication</property>
+    <property id="documentBase">StarDict</property>
+    <property id="name">StarDictApplication</property>
+    <property id="uid">0xED0C820B</property>
+    <component id="com.nokia.sdt.series60.CAknDocument">
+      <property id="className">CStarDictDocument</property>
+      <property id="name">StarDictDocument</property>
+      <component id="com.nokia.sdt.series60.CAknViewAppUi">
+        <property id="initialDesign" type="componentRef">aknViewReference1</property>
+        <property id="className">CStarDictAppUi</property>
+        <compoundProperty id="location">
+          <property id="x">10</property>
+          <property id="y">10</property>
+        </compoundProperty>
+        <property id="name">StarDictAppUi</property>
+        <compoundProperty id="size">
+          <property id="width">360</property>
+          <property id="height">640</property>
+        </compoundProperty>
+        <component id="com.nokia.sdt.series60.StatusPane">
+          <compoundProperty id="location">
+            <property id="x">30</property>
+          </compoundProperty>
+          <property id="name">statusPane</property>
+          <compoundProperty id="size">
+            <property id="width">306</property>
+            <property id="height">95</property>
+          </compoundProperty>
+          <component id="com.nokia.sdt.series60.StatusPaneCaption">
+            <property id="shortCaption" type="i18n">STR_StarDictApplication_5</property>
+            <compoundProperty id="location"/>
+            <property id="longCaption" type="i18n">STR_StarDictApplication_4</property>
+            <property id="name">caption</property>
+            <compoundProperty id="size">
+              <property id="width">222</property>
+              <property id="height">55</property>
+            </compoundProperty>
+          </component>
+        </component>
+        <component id="com.nokia.sdt.series60.CBA">
+          <compoundProperty id="location">
+            <property id="y">584</property>
+          </compoundProperty>
+          <compoundProperty id="info">
+            <property id="leftText" type="i18n">STR_StarDictApplication_1</property>
+            <property id="rightText" type="i18n">STR_StarDictApplication_2</property>
+            <property id="middleText" type="i18n">STR_StarDictApplication_3</property>
+          </compoundProperty>
+          <property id="name">controlPane</property>
+          <compoundProperty id="size">
+            <property id="width">360</property>
+            <property id="height">56</property>
+          </compoundProperty>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">StarDictContainer.uidesign</property>
+          <compoundProperty id="tabImage"/>
+          <property id="baseName">StarDictContainer</property>
+          <property id="name">aknViewReference1</property>
+        </component>
+        <component id="com.nokia.sdt.series60.AvkonViewReference">
+          <property id="filePath">DictMeaningContainer.uidesign</property>
+          <compoundProperty id="tabImage"/>
+          <property id="baseName">DictMeaningContainer</property>
+          <property id="name">aknViewReference2</property>
+        </component>
+      </component>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_English">
+      <string id="STR_StarDictApplication_1"/>
+      <string id="STR_StarDictApplication_2"/>
+      <string id="STR_StarDictApplication_3"/>
+      <string id="STR_StarDictApplication_4">StarDict</string>
+      <string id="STR_StarDictApplication_5">StarDict</string>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="statusPane">r_application_status_pane</resourceMapping>
+      <resourceMapping instanceName="aknViewReference1" rsrcId="tabText">r_application_akn_view_reference1</resourceMapping>
+      <resourceMapping instanceName="StarDictAppUi" rsrcId="localisable_app_info">r_localisable_app_info</resourceMapping>
+      <resourceMapping instanceName="StarDictAppUi">r_application_star_dict_app_ui</resourceMapping>
+      <resourceMapping instanceName="aknViewReference2" rsrcId="tabText">r_application_akn_view_reference2</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="aknViewReference1" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EStarDictContainerViewId</enumMapping>
+      <enumMapping instanceName="aknViewReference2" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EDictMeaningContainerViewId</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>src/stardictdocument.cpp</file>
+    <file>inc/stardictappui.h</file>
+    <file>inc/dictmeaningcontainerview.h</file>
+    <file>inc/stardictcontainerview.h</file>
+    <file>src/stardictapplication.cpp</file>
+    <file>inc/stardictdocument.h</file>
+    <file>src/stardictcontainerview.cpp</file>
+    <file>src/stardictappui.cpp</file>
+    <file>inc/stardictapplication.h</file>
+    <file>src/dictmeaningcontainerview.cpp</file>
+    <file>data/stardict.rss</file>
+    <file>inc/stardict.hrh</file>
+    <file>data/stardictcontainer.rssi</file>
+    <file>inc/stardictcontainer.hrh</file>
+    <file>data/dictmeaningcontainer.rssi</file>
+    <file>data/mycomres.rssi</file>
+    <file>inc/mycomres.hrh</file>
+    <file>data/stardict.loc</file>
+    <file>data/stardict.l01</file>
+    <file>data/stardictcontainer.loc</file>
+    <file>data/stardictcontainer.l01</file>
+    <file>data/dictmeaningcontainer.loc</file>
+    <file>data/dictmeaningcontainer.l01</file>
+    <file>data/mycomres.loc</file>
+    <file>data/mycomres.l01</file>
+  </generatedFiles>
+</designerData>

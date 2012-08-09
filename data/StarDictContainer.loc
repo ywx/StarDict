@@ -1,0 +1,13 @@
+/*
+========================================================================
+ Name        : StarDictContainer.loc
+ Author      : Yang WeiXiong
+ Copyright   : Star Dictionary
+Modify from S60Dict
+GPL Software based on Stardict
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_01
+#include "StarDictContainer.l01"
+#endif

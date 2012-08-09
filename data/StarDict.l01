@@ -1,0 +1,14 @@
+/*
+========================================================================
+ Name        : StarDict.l01
+ Author      : YWX
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+// localized strings for language: UK English (01)
+#define STR_StarDictApplication_1 ""
+#define STR_StarDictApplication_2 ""
+#define STR_StarDictApplication_3 ""
+#define STR_StarDictApplication_4 "StarDict"
+#define STR_StarDictApplication_5 "StarDict"

@@ -1,0 +1,129 @@
+/*
+========================================================================
+ Name        : StarDictContainer.rssi
+ Author      : Yang WeiXiong
+ Copyright   : Star Dictionary
+Modify from S60Dict
+GPL Software based on Stardict
+ Description : 
+========================================================================
+*/
+#include "StarDictContainer.hrh"
+#include "StarDictContainer.loc"
+
+RESOURCE AVKON_VIEW r_star_dict_container_star_dict_container_view
+	{
+	cba = r_star_dict_container_i_control_pane;
+	menubar = r_star_dict_container_options_menu;
+	toolbar = 0;
+	}
+RESOURCE MENU_BAR r_star_dict_container_options_menu
+	{titles =
+			{
+			MENU_TITLE
+				{
+				menu_pane = r_star_dict_container_menu_pane1_menu_pane;
+				}
+			};
+
+	}
+RESOURCE MENU_PANE r_star_dict_container_menu_pane1_menu_pane
+	{
+	items =
+		{
+		MENU_ITEM
+			{
+			command = EStarDictContainerViewIChangeDictionaryMenuItemCommand;
+			txt = STR_StarDictContainerView_12;
+			},
+		MENU_ITEM
+			{
+			command = EStarDictContainerViewIGoMenuItemCommand;
+			txt = STR_StarDictContainerView_13;
+			},
+		MENU_ITEM
+			{
+			command = EStarDictContainerViewISettingMenuItemCommand;
+			txt = STR_StarDictContainerView_14;
+			},
+		MENU_ITEM
+			{
+			command = EStarDictContainerViewIAboutMenuItemCommand;
+			txt = STR_StarDictContainerView_15;
+			},
+		MENU_ITEM
+			{
+			command = EStarDictContainerViewIExitMenuItemCommand;
+			txt = STR_StarDictContainerView_16;
+			}
+		};
+	}
+
+RESOURCE STATUS_PANE_APP_MODEL r_star_dict_container_i_status_pane
+	{
+	panes =
+		{
+		SPANE_PANE
+			{
+			id = EEikStatusPaneUidTitle;
+			type = EAknCtTitlePane;
+			resource = r_star_dict_container_i_title_resource;
+			}
+		};
+	}
+RESOURCE TITLE_PANE r_star_dict_container_i_title_resource
+	{
+	txt = STR_StarDictContainerView_4;
+	}
+RESOURCE AVKON_BUTTON r_star_dict_container_i_change_dictionary_button
+	{
+	flags = KAknButtonKeyRepeat;
+	states =
+		{
+		AVKON_BUTTON_STATE
+			{
+			txt = STR_StarDictContainerView_5;
+			helptxt = STR_StarDictContainerView_6;
+			dim_bmpmask = -1;
+			press_bmpmask = -1;
+			hover_bmpmask = -1;
+			bmpmask = -1;
+			}
+		};
+	}
+RESOURCE GTXTED r_star_dict_container_i_search_text_editor
+	{
+	numlines = 0;
+	default_case = EAknEditorTextCase;
+	allowed_case_modes = EAknEditorAllCaseModes;
+	numeric_keymap = EAknEditorStandardNumberModeKeymap;
+	default_input_mode = EAknEditorTextInputMode;
+	allowed_input_modes = EAknEditorTextInputMode | EAknEditorNumericInputMode | EAknEditorSecretAlphaInputMode | EAknEditorKatakanaInputMode | EAknEditorFullWidthTextInputMode | EAknEditorFullWidthNumericInputMode | EAknEditorFullWidthKatakanaInputMode | EAknEditorHiraganaKanjiInputMode | EAknEditorHalfWidthTextInputMode;
+	textlimit = 30;
+	avkon_flags = EAknEditorFlagForceTransparentFepModes;
+	}
+RESOURCE TBUF r_star_dict_container_i_search_text_editor_2
+	{
+	buf = STR_StarDictContainerView_11;
+	}
+RESOURCE CBA r_star_dict_container_i_control_pane
+	{
+	buttons =
+		{
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyOptions;
+			txt = STR_StarDictContainerView_1;
+			},
+		CBA_BUTTON
+			{
+			id = EStarDictContainerViewIControlPaneRightId;
+			txt = STR_StarDictContainerView_2;
+			},
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyExit;
+			txt = STR_StarDictContainerView_3;
+			}
+		};
+	}

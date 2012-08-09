@@ -1,0 +1,26 @@
+
+PRJ_PLATFORMS
+WINSCW ARMV5 GCCE
+
+
+#ifdef SBSV2
+
+PRJ_EXTENSIONS
+	
+	START EXTENSION s60/mifconv
+	OPTION TARGETFILE stardict_0xED0C820B.mif
+	OPTION HEADERFILE stardict_0xED0C820B.mbg
+	OPTION SOURCEDIR ../gfx
+	OPTION SOURCES -c32 qgn_menu_StarDict
+	END
+
+#else
+
+PRJ_MMPFILES
+
+	gnumakefile Icons_aif_scalable_dc.mk
+
+#endif
+
+PRJ_MMPFILES
+StarDict.mmp

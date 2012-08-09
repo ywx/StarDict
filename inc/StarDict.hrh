@@ -1,0 +1,13 @@
+/*
+========================================================================
+ Name        : StarDict.hrh
+ Author      : YWX
+ Copyright   : 
+ Description : 
+========================================================================
+*/
+enum TStarDictViewUids
+	{
+	EStarDictContainerViewId = 1,
+	EDictMeaningContainerViewId
+	};

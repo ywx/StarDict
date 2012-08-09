@@ -1,0 +1,179 @@
+/*
+========================================================================
+ Name        : myComRes.rssi
+ Author      : 
+ Copyright   : Your copyright notice
+ Description : 
+========================================================================
+*/
+#include <CommonDialogs.hrh>
+#include <CommonDialogs.rh>
+
+#include "myComRes.hrh"
+#include "myComRes.loc"
+
+// -----------------------------------------------------------------------------
+//
+// About dialog resource.
+//
+// -----------------------------------------------------------------------------
+//
+RESOURCE DIALOG r_about_query_dialog
+{
+	flags = EGeneralQueryFlags | EEikDialogFlagNoBorder | EEikDialogFlagNoShadow;
+	buttons = R_AVKON_SOFTKEYS_OK_EMPTY;
+	items=
+	{
+		DLG_LINE
+		{
+			type = EAknCtPopupHeadingPane;
+			id = EAknMessageQueryHeaderId;
+			itemflags = EEikDlgItemNonFocusing;
+			control = AVKON_HEADING
+			{
+			};
+		},
+		DLG_LINE
+		{
+			type = EAknCtMessageQuery;
+			id = EAknMessageQueryContentId;
+			control = AVKON_MESSAGE_QUERY
+			{
+			};
+		}
+	};
+}
+
+
+//----------------------------------------------------
+//    r_dictionary_list_dialog
+//    resource for dictionary list dialog
+//----------------------------------------------------
+//
+RESOURCE AVKON_LIST_QUERY r_dictionary_list_dialog
+{
+	flags = EGeneralQueryFlags;
+	softkeys = R_AVKON_SOFTKEYS_OK_CANCEL;
+	items =
+	{
+		AVKON_LIST_QUERY_DLG_LINE
+		{
+			control = AVKON_LIST_QUERY_CONTROL
+			{
+				listtype = EAknCtSinglePopupMenuListBox;
+				listbox = AVKON_LIST_QUERY_LIST
+				{
+					//array_id = r_aknexquery_query_list_item;
+				};
+				heading = qtn_dictionaries_list_heading;
+			};
+		}
+	};
+}
+
+
+// -----------------------------------------------------------------------------
+//
+// Resources for messages.
+//
+// -----------------------------------------------------------------------------
+//
+//RESOURCE TBUF32 r_caption_string { buf=qtn_caption_string; }
+RESOURCE TBUF32 r_about_dialog_title { buf=qtn_about_dialog_title; }
+RESOURCE TBUF r_about_dialog_text { buf=qtn_about_dialog_text; }
+
+
+RESOURCE TBUF r_query_yseno_input_save_file_text { buf=qtn_query_yseno_input_save_file_text; }
+RESOURCE TBUF r_query_yseno_unicode_gbk_text { buf=qtn_query_yseno_unicode_gbk_text; }
+
+//RESOURCE TBUF r_message_test_save_data_text { buf=qtn_message_test_save_data_text; }
+RESOURCE TBUF r_query_yseno_new_file_text { buf=qtn_query_yseno_new_file_text; }
+RESOURCE TBUF r_query_yseno_append_file_text { buf=qtn_query_yseno_append_file_text; }
+
+RESOURCE TBUF r_query_yseno_display_subdir_text { buf=qtn_query_yseno_display_subdir_text; }
+
+
+RESOURCE TBUF r_word_not_found_string			{ buf = qtn_word_not_found;}
+RESOURCE TBUF r_no_dictionaries_found_string	{ buf = qtn_no_dictionaries_found;}
+RESOURCE TBUF r_not_enough_memory_string		{ buf = qtn_not_enough_memory;}
+RESOURCE TBUF r_cant_read_from_file_string		{ buf = qtn_cant_read_from_file;}
+RESOURCE TBUF r_length_is_zero_string			{ buf = qtn_length_is_zero;}
+RESOURCE TBUF r_internal_error					{ buf = qtn_internal_error;}
+RESOURCE TBUF r_corrupt_string					{ buf = qtn_corrupt;}
+
+
+//
+// Save YesNo button resource
+//
+RESOURCE AVKON_BUTTON r_myuiapp003_edit_yesno_button
+{
+	flags = KAknButtonTextInsideFrame;
+	states =
+	{
+		AVKON_BUTTON_STATE
+		{
+			txt = "Read Only";
+			helptxt = "Edit Status";
+		},
+		AVKON_BUTTON_STATE
+		{
+			flags = KAknButtonStateHasLatchedFrame;
+			txt = "As Edit"; //Pressed!
+			helptxt = "Edit Status";
+		},
+		AVKON_BUTTON_STATE
+		{
+			txt = "Edit As View";
+			helptxt = "Edit Status";
+		}
+	};
+}
+
+//
+RESOURCE MEMORYSELECTIONDIALOG r_memory_selection_dialog 
+{ 
+//title = qtn_dialog_file_select_title_string; 
+//softkey_1 = qtn_dialog_ok_string; 
+//softkey_2 = qtn_dialog_cancel_string; 
+//title = "Select File Dialog"; 
+//softkey_1 = "Select"; 
+//softkey_2 = "Back"; 
+}
+
+//
+//RESOURCE TBUF32 r_caption_string { buf=qtn_dialog_file_select_title_string; }
+//RESOURCE TBUF32 r_about_dialog_title { buf=qtn_about_dialog_title; }
+
+//
+RESOURCE FILESELECTIONDIALOG r_file_selection_dialog 
+{ 
+
+}
+
+// New
+RESOURCE MEMORYSELECTIONDIALOG r_memory_new_selection_dialog 
+{ 
+title = "New File to"; 
+}
+
+RESOURCE FILESELECTIONDIALOG r_file_new_dialog 
+{ 
+	title = "New File To"; 
+	softkey_1_file = "New"; 
+	softkey_1_folder = "New to";
+}
+
+// Open
+RESOURCE MEMORYSELECTIONDIALOG r_memory_open_selection_dialog 
+{ 
+title = "Open File to"; 
+}
+
+RESOURCE FILESELECTIONDIALOG r_file_open_dialog 
+{ 
+	title = "Open File To"; 
+	softkey_1_file = "Open File"; 
+	softkey_1_folder = "Open to";
+}
+
+// End of File

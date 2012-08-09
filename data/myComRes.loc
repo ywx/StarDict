@@ -1,0 +1,11 @@
+/*
+========================================================================
+ Name        : myComRes.loc
+ Author      : 
+ Copyright   : Your copyright notice
+ Description : 
+========================================================================
+*/
+#ifdef LANGUAGE_01
+#include "myComRes.l01"
+#endif

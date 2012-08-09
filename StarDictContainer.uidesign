@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designerData version="1.1.0">
+  <componentManifest>
+    <manifestEntry id="com.nokia.sdt.series60.CAknView" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.DesignTimeContainer" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CommonBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitle" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.StatusPaneTitleBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBA" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CBABase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControl" version="1.2.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.ContainerBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CAknButton" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CCoeControlBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CEikGlobalText" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.CEikEdwinBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.EditorBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBar" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuBase" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuPane" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuItem" version="1.0.0"/>
+    <manifestEntry id="com.nokia.sdt.series60.MenuItemBase" version="1.0.0"/>
+  </componentManifest>
+  <property id="com.nokia.sdt.symbian.dm.RESOURCE_DIRECTORY_ID">data</property>
+  <property id="com.nokia.sdt.component.symbian.version">5.0.0</property>
+  <property id="com.nokia.sdt.component.symbian.vendor">com.nokia.series60</property>
+  <property id="com.nokia.sdt.symbian.dm.COMPONENT_PROVIDER">com.nokia.sdt.component.symbian.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.INCLUDE_DIRECTORY_ID">inc</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCE_DIRECTORY_ID">src</property>
+  <property id="com.nokia.sdt.symbian.dm.SOURCEGEN_PROVIDER">com.nokia.sdt.sourcegen.Symbian-Provider</property>
+  <property id="com.nokia.sdt.symbian.dm.BUILD_DIRECTORY_ID">group</property>
+  <component id="com.nokia.sdt.series60.CAknView">
+    <property id="className">CStarDictContainerView</property>
+    <compoundProperty id="location">
+      <property id="x">10</property>
+      <property id="y">10</property>
+    </compoundProperty>
+    <property id="optionsMenu" type="componentRef">optionsMenu</property>
+    <property id="name">StarDictContainerView</property>
+    <compoundProperty id="size">
+      <property id="width">360</property>
+      <property id="height">640</property>
+    </compoundProperty>
+    <component id="com.nokia.sdt.series60.StatusPane">
+      <compoundProperty id="location">
+        <property id="x">30</property>
+      </compoundProperty>
+      <property id="name">iStatusPane</property>
+      <compoundProperty id="size">
+        <property id="width">306</property>
+        <property id="height">95</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.StatusPaneTitle">
+        <compoundProperty id="location"/>
+        <property id="name">iTitle</property>
+        <property id="titleText" type="i18n">STR_StarDictContainerView_4</property>
+        <compoundProperty id="size">
+          <property id="width">222</property>
+          <property id="height">55</property>
+        </compoundProperty>
+        <compoundProperty id="image"/>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.CBA">
+      <compoundProperty id="location">
+        <property id="y">584</property>
+      </compoundProperty>
+      <compoundProperty id="info">
+        <property id="leftText" type="i18n">STR_StarDictContainerView_1</property>
+        <property id="rightText" type="i18n">STR_StarDictContainerView_2</property>
+        <property id="middleText" type="i18n">STR_StarDictContainerView_3</property>
+        <property id="rightId">UNIQUE</property>
+        <property id="type">CUSTOM</property>
+        <property id="middleId">EAknSoftkeyExit</property>
+      </compoundProperty>
+      <property id="name">iControlPane</property>
+      <compoundProperty id="size">
+        <property id="width">360</property>
+        <property id="height">56</property>
+      </compoundProperty>
+      <eventBinding id="rightSoftKeyPressed" handlerDisplay="HandleControlPaneRightSoftKeyPressedL" handlerSymbol="cpp@src//StarDictContainerView.cpp/function(CStarDictContainerView::HandleControlPaneRightSoftKeyPressedL(TInt))"/>
+    </component>
+    <component id="com.nokia.sdt.series60.CCoeControl">
+      <property id="initialFocus" type="componentRef">iSearchTextEditor</property>
+      <compoundProperty id="location">
+        <property id="y">99</property>
+      </compoundProperty>
+      <property id="className">CStarDictContainer</property>
+      <property id="name">StarDictContainer</property>
+      <compoundProperty id="size">
+        <property id="width">360</property>
+        <property id="height">485</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.CAknButton">
+        <property id="buttonHelpText" type="i18n">STR_StarDictContainerView_6</property>
+        <compoundProperty id="size">
+          <property id="width">360</property>
+          <property id="height">40</property>
+        </compoundProperty>
+        <compoundProperty id="location">
+          <property id="x">0</property>
+          <property id="y">0</property>
+        </compoundProperty>
+        <property id="buttonKeyRepeat">true</property>
+        <compoundProperty id="images"/>
+        <property id="name">iChangeDictionaryButton</property>
+        <property id="buttonText" type="i18n">STR_StarDictContainerView_5</property>
+        <eventBinding id="stateChanged" handlerDisplay="HandleChangeDictionaryButtonStateChangedL" handlerSymbol="cpp@src//StarDictContainer.cpp/function(CStarDictContainer::HandleChangeDictionaryButtonStateChangedL(CCoeControl*,TCoeEvent))"/>
+      </component>
+      <component id="com.nokia.sdt.series60.CEikGlobalText">
+        <compoundProperty id="size">
+          <property id="width">360</property>
+          <property id="height">40</property>
+        </compoundProperty>
+        <compoundProperty id="avkonFlags">
+          <property id="EAknEditorFlagForceTransparentFepModes">true</property>
+          <property id="EAknEditorFlagFixedCase">false</property>
+          <property id="EAknEditorFlagNoT9">false</property>
+          <property id="EAknEditorFlagNoEditIndicators">false</property>
+          <property id="EAknEditorFlagNoLRNavigation">false</property>
+          <property id="EAknEditorFlagSupressShiftMenu">false</property>
+          <property id="EAknEditorFlagEnableScrollBars">false</property>
+          <property id="EAknEditorFlagMTAutoOverwrite">false</property>
+          <property id="EAknEditorFlagUseSCTNumericCharmap">false</property>
+          <property id="EAknEditorFlagLatinInputModesOnly">false</property>
+          <property id="EAknEditorFlagAllowEntersWithScrollDown">false</property>
+          <property id="EAknEditorFlagEnablePictographInput">false</property>
+          <property id="EAknEditorFlagFindPane">false</property>
+        </compoundProperty>
+        <compoundProperty id="location">
+          <property id="y">445</property>
+          <property id="x">0</property>
+        </compoundProperty>
+        <compoundProperty id="flags"/>
+        <compoundProperty id="allowedCaseModes"/>
+        <property id="name">iSearchTextEditor</property>
+        <property id="text" type="i18n">STR_StarDictContainerView_11</property>
+        <compoundProperty id="charFormat"/>
+        <compoundProperty id="allowedInputModes">
+          <property id="EAknEditorKatakanaInputMode">true</property>
+          <property id="EAknEditorFullWidthTextInputMode">true</property>
+          <property id="EAknEditorFullWidthNumericInputMode">true</property>
+          <property id="EAknEditorFullWidthKatakanaInputMode">true</property>
+          <property id="EAknEditorHiraganaKanjiInputMode">true</property>
+          <property id="EAknEditorHalfWidthTextInputMode">true</property>
+        </compoundProperty>
+        <property id="textlimit">30</property>
+        <eventBinding id="textUpdated" handlerDisplay="HandleISearchTextEditorTextUpdatedL" handlerSymbol="cpp@src//StarDictContainer.cpp/function(CStarDictContainer::HandleISearchTextEditorTextUpdatedL(CEikEdwin*,TEdwinEvent))"/>
+      </component>
+    </component>
+    <component id="com.nokia.sdt.series60.MenuBar">
+      <compoundProperty id="location">
+        <property id="x">12</property>
+        <property id="y">357</property>
+      </compoundProperty>
+      <property id="name">optionsMenu</property>
+      <compoundProperty id="size">
+        <property id="height">227</property>
+        <property id="width">335</property>
+      </compoundProperty>
+      <component id="com.nokia.sdt.series60.MenuPane">
+        <compoundProperty id="location"/>
+        <property id="name">menuPane1</property>
+        <compoundProperty id="size">
+          <property id="height">227</property>
+          <property id="width">335</property>
+        </compoundProperty>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">2</property>
+          </compoundProperty>
+          <property id="name">iChangeDictionaryMenuItem</property>
+          <property id="text" type="i18n">STR_StarDictContainerView_12</property>
+          <compoundProperty id="flags"/>
+          <compoundProperty id="size">
+            <property id="width">320</property>
+            <property id="height">42</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleIChangeDictionaryMenuItemSelectedL" handlerSymbol="cpp@src//StarDictContainerView.cpp/function(CStarDictContainerView::HandleIChangeDictionaryMenuItemSelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">46</property>
+          </compoundProperty>
+          <property id="name">iGoMenuItem</property>
+          <property id="text" type="i18n">STR_StarDictContainerView_13</property>
+          <compoundProperty id="flags"/>
+          <compoundProperty id="size">
+            <property id="width">320</property>
+            <property id="height">42</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleIGoMenuItemSelectedL" handlerSymbol="cpp@src//StarDictContainerView.cpp/function(CStarDictContainerView::HandleIGoMenuItemSelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">90</property>
+          </compoundProperty>
+          <property id="name">iSettingMenuItem</property>
+          <property id="text" type="i18n">STR_StarDictContainerView_14</property>
+          <compoundProperty id="flags"/>
+          <compoundProperty id="size">
+            <property id="width">320</property>
+            <property id="height">42</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleISettingMenuItemSelectedL" handlerSymbol="cpp@src//StarDictContainerView.cpp/function(CStarDictContainerView::HandleISettingMenuItemSelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">134</property>
+          </compoundProperty>
+          <property id="name">iAboutMenuItem</property>
+          <property id="text" type="i18n">STR_StarDictContainerView_15</property>
+          <compoundProperty id="flags"/>
+          <compoundProperty id="size">
+            <property id="width">320</property>
+            <property id="height">42</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleAboutMenuItemSelectedL" handlerSymbol="cpp@src//StarDictContainerView.cpp/function(CStarDictContainerView::HandleAboutMenuItemSelectedL(TInt))"/>
+        </component>
+        <component id="com.nokia.sdt.series60.MenuItem">
+          <compoundProperty id="location">
+            <property id="x">5</property>
+            <property id="y">178</property>
+          </compoundProperty>
+          <property id="name">iExitMenuItem</property>
+          <property id="text" type="i18n">STR_StarDictContainerView_16</property>
+          <compoundProperty id="flags"/>
+          <compoundProperty id="size">
+            <property id="width">320</property>
+            <property id="height">42</property>
+          </compoundProperty>
+          <eventBinding id="selected" handlerDisplay="HandleExitMenuItemSelectedL" handlerSymbol="cpp@src//StarDictContainerView.cpp/function(CStarDictContainerView::HandleExitMenuItemSelectedL(TInt))"/>
+        </component>
+      </component>
+    </component>
+  </component>
+  <stringBundle>
+    <stringTable language="LANG_English">
+      <string id="STR_StarDictContainerView_1">Options</string>
+      <string id="STR_StarDictContainerView_2">Go</string>
+      <string id="STR_StarDictContainerView_3">Exit</string>
+      <string id="STR_StarDictContainerView_4">Star Dictionary</string>
+      <string id="STR_StarDictContainerView_12">Change Dictionary</string>
+      <string id="STR_StarDictContainerView_13">Go</string>
+      <string id="STR_StarDictContainerView_14">Setting</string>
+      <string id="STR_StarDictContainerView_15">About</string>
+      <string id="STR_StarDictContainerView_16">Exit</string>
+      <string id="STR_StarDictContainerView_5">Change Dictionary</string>
+      <string id="STR_StarDictContainerView_6">Button Hover Text</string>
+      <string id="STR_StarDictContainerView_11"/>
+    </stringTable>
+  </stringBundle>
+  <macroTable/>
+  <sourceMappingState>
+    <resourceMappings>
+      <resourceMapping instanceName="menuPane1">r_star_dict_container_menu_pane1_menu_pane</resourceMapping>
+      <resourceMapping instanceName="iTitle">r_star_dict_container_i_title_resource</resourceMapping>
+      <resourceMapping instanceName="iControlPane">r_star_dict_container_i_control_pane</resourceMapping>
+      <resourceMapping instanceName="optionsMenu">r_star_dict_container_options_menu</resourceMapping>
+      <resourceMapping instanceName="iSearchTextEditor">r_star_dict_container_i_search_text_editor</resourceMapping>
+      <resourceMapping instanceName="StarDictContainerView">r_star_dict_container_star_dict_container_view</resourceMapping>
+      <resourceMapping instanceName="iChangeDictionaryButton">r_star_dict_container_i_change_dictionary_button</resourceMapping>
+      <resourceMapping instanceName="iSearchTextEditor" rsrcId="text">r_star_dict_container_i_search_text_editor_2</resourceMapping>
+      <resourceMapping instanceName="iStatusPane">r_star_dict_container_i_status_pane</resourceMapping>
+    </resourceMappings>
+    <enumMappings>
+      <enumMapping instanceName="selectDictionaryMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EStarDictContainerViewSelectDictionaryMenuItemCommand</enumMapping>
+      <enumMapping instanceName="iExitMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EStarDictContainerViewIExitMenuItemCommand</enumMapping>
+      <enumMapping instanceName="settingMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EStarDictContainerViewSettingMenuItemCommand</enumMapping>
+      <enumMapping instanceName="iControlPane" propertyId="leftId" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EAknSoftkeyOptions</enumMapping>
+      <enumMapping instanceName="aboutMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EStarDictContainerViewAboutMenuItemCommand</enumMapping>
+      <enumMapping instanceName="iSearchTextEditor" propertyId="defaultInputMode">EAknEditorTextInputMode</enumMapping>
+      <enumMapping instanceName="goMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EStarDictContainerViewGoMenuItemCommand</enumMapping>
+      <enumMapping instanceName="iSearchTextEditor" propertyId="defaultCase">EAknEditorTextCase</enumMapping>
+      <enumMapping instanceName="iSettingMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EStarDictContainerViewISettingMenuItemCommand</enumMapping>
+      <enumMapping instanceName="iSearchTextEditor" propertyId="numericKeymap">EAknEditorStandardNumberModeKeymap</enumMapping>
+      <enumMapping instanceName="iAboutMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EStarDictContainerViewIAboutMenuItemCommand</enumMapping>
+      <enumMapping instanceName="iTitle" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_STATUS_PANE_ID">EEikStatusPaneUidTitle</enumMapping>
+      <enumMapping instanceName="iControlPane" propertyId="middleId" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EAknSoftkeyExit</enumMapping>
+      <enumMapping instanceName="iGoMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EStarDictContainerViewIGoMenuItemCommand</enumMapping>
+      <enumMapping instanceName="StarDictContainerView" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_VIEW_UID">EStarDictContainerViewId</enumMapping>
+      <enumMapping instanceName="iControlPane" propertyId="rightId" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EStarDictContainerViewIControlPaneRightId</enumMapping>
+      <enumMapping instanceName="iChangeDictionaryMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EStarDictContainerViewIChangeDictionaryMenuItemCommand</enumMapping>
+      <enumMapping instanceName="iTitle" propertyId="" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_CONTROL_TYPE">EAknCtTitlePane</enumMapping>
+      <enumMapping instanceName="exitMenuItem" propertyId="command" nameAlgorithm="com.nokia.sdt.component.symbian.NAME_ALG_COMMANDS">EStarDictContainerViewExitMenuItemCommand</enumMapping>
+    </enumMappings>
+    <arrayMappings/>
+  </sourceMappingState>
+  <generatedFiles>
+    <file>src/stardictcontainer.cpp</file>
+    <file>inc/stardictcontainer.h</file>
+    <file>inc/stardictcontainerview.h</file>
+    <file>src/stardictcontainerview.cpp</file>
+    <file>data/stardict.rss</file>
+    <file>inc/stardict.hrh</file>
+    <file>data/stardictcontainer.rssi</file>
+    <file>inc/stardictcontainer.hrh</file>
+    <file>data/dictmeaningcontainer.rssi</file>
+    <file>data/mycomres.rssi</file>
+    <file>inc/mycomres.hrh</file>
+    <file>data/stardict.loc</file>
+    <file>data/stardict.l01</file>
+    <file>data/stardictcontainer.loc</file>
+    <file>data/stardictcontainer.l01</file>
+    <file>data/dictmeaningcontainer.loc</file>
+    <file>data/dictmeaningcontainer.l01</file>
+    <file>data/mycomres.loc</file>
+    <file>data/mycomres.l01</file>
+  </generatedFiles>
+</designerData>
